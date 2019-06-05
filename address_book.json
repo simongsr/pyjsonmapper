@@ -1,0 +1,58 @@
+[
+  {
+    "first_name": "Daenerys",
+    "last_name": "Targaryen",
+    "address": [
+      {
+        "type": "email",
+        "value": "daenery.targaryen@got.co.uk"
+      },
+      {
+        "type": "phone",
+        "value": "+44 1234567890"
+      }
+    ]
+  },
+  {
+    "first_name": "Jon",
+    "last_name": "Snow",
+    "address": [
+      {
+        "type": "email",
+        "value": "jon.snow@got.co.uk"
+      },
+      {
+        "type": "phone",
+        "value": "+44 1234567890"
+      }
+    ]
+  },
+  {
+    "first_name": "Arya",
+    "last_name": "Stark",
+    "address": [
+      {
+        "type": "email",
+        "value": "arya.stark@got.co.uk"
+      },
+      {
+        "type": "phone",
+        "value": "+44 1234567890"
+      }
+    ]
+  },
+  {
+    "first_name": "Cersei",
+    "last_name": "Lannister",
+    "address": [
+      {
+        "type": "email",
+        "value": "cersei.lannister@got.co.uk"
+      },
+      {
+        "type": "phone",
+        "value": "+44 1234567890"
+      }
+    ]
+  }
+]
