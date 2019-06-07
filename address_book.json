@@ -16,6 +16,7 @@
   {
     "first_name": "Jon",
     "last_name": "Snow",
+    "age": 33,
     "address": [
       {
         "type": "email",
@@ -30,6 +31,7 @@
   {
     "first_name": "Arya",
     "last_name": "Stark",
+    "age": 16,
     "address": [
       {
         "type": "email",
@@ -44,6 +46,7 @@
   {
     "first_name": "Cersei",
     "last_name": "Lannister",
+    "age": 39,
     "address": [
       {
         "type": "email",
