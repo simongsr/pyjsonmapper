@@ -103,3 +103,14 @@ class Model(ABC):
         elif isinstance(something, list):
             something = [dump_object(x) for x in something]
         return json.dumps(something, indent=indent)
+
+    @classmethod
+    def raw(cls, something):
+        if isinstance(something, Model):
+            return {fieldname: getattr(something, f'__{fieldname}').get_value()
+                    for fieldname in cls.__field_factories}
+        elif isinstance(something, list):
+            return [cls.raw(item) for item in something]
+        else:
+            raise ValueError(f'Expected a Model instance or a collection of '
+                             f'Model instances, got {type(something).__name__}')

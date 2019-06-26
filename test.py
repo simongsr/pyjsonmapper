@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.6
 import json
+from pprint import pprint
 
 from field import String, Array, Integer
 from model import Model
@@ -35,4 +36,4 @@ with open('address_book.json', 'r') as fp:
 address_book1 = Entry.load(raw_address_book)
 
 print(address_book == address_book1)
-# print(address_book)
+pprint(Entry.raw(address_book))
