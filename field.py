@@ -79,8 +79,11 @@ class ObjectField(Field):
         self.model = model
 
     def set_value(self, value) -> None:
-        model_instance = self.model.load(value)
-        super().set_value(model_instance)
+        if self.model is not None:
+            model_instance = self.model.load(value)
+            super().set_value(model_instance)
+        else:
+            super().set_value(value)
 
 
 class ArrayField(Field):
@@ -121,7 +124,7 @@ Boolean = __scalar_field_factory_builder(BooleanField)
 
 class Object(FieldFactory):
 
-    def __init__(self, model, **kwargs):
+    def __init__(self, model=None, **kwargs):
         self.model = model
         self.kwargs = kwargs
 
