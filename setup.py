@@ -1,5 +1,5 @@
 #!/usr/bin/env python3.6
-from distutils.core import setup
+from setuptools import setup
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)
