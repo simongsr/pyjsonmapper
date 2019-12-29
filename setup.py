@@ -15,7 +15,7 @@ setup(
         'License :: GNU General Public License v3.0'
     ],
     url="https://github.com/simongsr/pyjsonmapper",
-    packages=['distutils', 'distutils.command'],
+    packages=[],
     scripts=[
         '__init__.py',
         'field.py',
