@@ -8,8 +8,8 @@ A simple and hackable mapper from json to python objects... and viceversa!
 import json
 from pprint import pprint
 
-from field import String, Array, Integer
-from model import Model
+from pyjsonmapper.field import String, Array, Integer
+from pyjsonmapper.model import Model
 
 
 class Address(Model):

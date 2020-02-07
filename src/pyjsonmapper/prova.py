@@ -1,9 +1,9 @@
 #!/usr/bin/env python3.6
 from datetime import datetime
 
-from field import String, Float, Integer, Object, Array, Boolean
-from model import Model
-from validator import is_datetime
+from pyjsonmapper.field import String, Float, Integer, Object, Array, Boolean
+from pyjsonmapper.model import Model
+from pyjsonmapper.validator import is_datetime
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)

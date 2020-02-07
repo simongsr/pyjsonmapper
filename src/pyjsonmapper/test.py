@@ -2,8 +2,8 @@
 import json
 from pprint import pprint
 
-from field import String, Array, Integer
-from model import Model
+from pyjsonmapper.field import String, Array, Integer
+from pyjsonmapper.model import Model
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)
