@@ -2,7 +2,7 @@
 from abc import ABC
 from typing import Any
 
-from pyjsonmapper.validator import is_string, is_number, is_boolean
+from validator import is_string, is_number, is_boolean
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)

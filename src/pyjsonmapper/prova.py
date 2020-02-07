@@ -1,8 +1,7 @@
 #!/usr/bin/env python3.6
 from datetime import datetime
 
-from field import String, Float, Integer, Object, \
-    Array, Boolean
+from field import String, Float, Integer, Object, Array, Boolean
 from model import Model
 from validator import is_datetime
 

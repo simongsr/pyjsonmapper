@@ -4,7 +4,7 @@ import json
 from abc import ABC
 from typing import Any
 
-from pyjsonmapper.field import FieldFactory
+from field import FieldFactory
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)

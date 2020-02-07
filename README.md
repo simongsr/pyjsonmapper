@@ -30,10 +30,10 @@ class Entry(Model):
         return f'Entry{{ first_name="{self.first_name}" last_name="{self.last_name}" address=[{self.address}] age={self.age} }}'
 
 
-with open('address_book.json', 'r') as fp:
+with open('src/pyjsonmapper/address_book.json', 'r') as fp:
     address_book = Entry.load(fp)
 
-with open('address_book.json', 'r') as fp:
+with open('src/pyjsonmapper/address_book.json', 'r') as fp:
     raw_address_book = json.load(fp)
 
 address_book1 = Entry.load(raw_address_book)
