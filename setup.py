@@ -15,7 +15,7 @@ with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='pyjsonmapper',
     version='0.1',
-    scripts=[filename for filename in os.listdir() if filename.endswith('.py')],
+    # scripts=[filename for filename in os.listdir() if filename.endswith('.py')],
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     package_data={
