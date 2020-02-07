@@ -1,29 +1,39 @@
 #!/usr/bin/env python3.6
-from setuptools import setup
+import os
+
+from setuptools import setup, find_packages
 
 __author__ = 'Simone Pandolfi <simopandolfi@gmail.com>'
 __version__ = (1, 0, 0)
 
+here = os.path.abspath(os.path.dirname(__file__))
+
+# Get the long description from the README file
+with open(os.path.join(here, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(
-    name="pyjsonmapper",
-    version="0.1",
-    description="A simple and hackable mapper from json to python objects... and viceversa!",
-    author="Simone Pandolfi",
-    author_email="simopandolfi@gmail.com",
-    keywords="json mapper",
-    classifiers=[
-        'License :: GNU General Public License v3.0'
-    ],
-    url="https://github.com/simongsr/pyjsonmapper",
-    packages=[],
-    scripts=[
-        '__init__.py',
-        'field.py',
-        'model.py',
-        'validator.py',
-    ],
+    name='pyjsonmapper',
+    version='0.1',
+    packages=find_packages(),
+    scripts=[filename for filename in os.listdir() if filename.endswith('.py')],
     package_data={
         # If any package contains *.txt or *.rst files, include them:
         '': ['*.txt', '*.rst'],
+        # And include any *.msg files found in the 'hello' package, too:
+        'hello': ['*.msg'],
     },
+    python_requires='!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4',
+    # metadata to display on PyPI
+    author="Simone Pandolfi",
+    author_email="simopandolfi@gmail.com",
+    description="A simple and hackable mapper from json to python objects... and viceversa!",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
+    keywords="json mapper",
+    url="https://github.com/simongsr/pyjsonmapper",
+    project_urls={},
+    classifiers=[
+        'License :: GNU General Public License v3.0'
+    ]
 )
